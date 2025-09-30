@@ -1,66 +1,69 @@
-Furbexe 🐾
+# Furbexe — Furby Connect Control
 
-Furbexe is a desktop application that lets you connect to and control your Furby Connect over Bluetooth Low Energy (BLE).
+Furbexe is a user-friendly desktop tool for controlling **Furby Connect** toys via Bluetooth Low Energy (BLE).  
+No Python setup needed — just download, run, and connect.  
 
-It provides an easy-to-use graphical interface for scanning, connecting, sending motor commands, playing presets, running custom sequences, and even inspecting the raw Bluetooth packets your Furby sends and receives.
+---
 
-✨ Features
+## ✨ Features
 
-🔍 Device Scanner – Detect and list nearby Furby Connect toys.
+- Scan and list nearby **Furby Connect** devices  
+- Connect / reconnect over BLE  
+- Motor controls: ears, eyelids, mouth, feet, body wiggle  
+- Presets (e.g. *Blink*, *Open Mouth*)  
+- Custom sequences — save and replay your own motions  
+- Packet Inspector — view raw BLE data (HEX / ASCII)  
+- Map BLE packet bytes to info fields (Name, Mood, etc)  
+- Console log for debugging  
 
-🔗 One-Click Connect / Reconnect – Simple connection process.
+---
 
-🎚 Motor Control Sliders – Move ears, eyelids, mouth, feet, and body.
+## 📥 Download & Install
 
-⚡ Presets – Built-in actions like Blink and Open Mouth.
+You don’t need Python — just grab the `.exe` from the Releases page:
 
-🎭 Custom Sequences – Create, save, and replay your own Furby “dances.”
+1. Go to the **Releases** tab  
+2. Download the `.exe` build (e.g. `Furbexe-v1.0.0.exe`)  
+3. Run it (double-click)  
+4. The application will open — you’re ready to scan and connect!  
 
-📝 Packet Inspector – Live logging of raw BLE data in HEX/ASCII.
+---
 
-🧩 Field Mapping – Assign BLE byte ranges to Furby states (Hunger, Mood, Battery, etc).
+## 🚀 How to Use
 
-📥 Installation
+1. Launch Furbexe  
+2. Click **Scan for Devices**  
+3. Select your Furby Connect in the device list  
+4. Press **Connect**  
+5. Use sliders, presets, or custom sequences  
+6. View packet logs and map packet bytes to info fields  
 
-No Python setup required — just download and run the EXE.
+---
 
-Requirements:
+## 📂 Files
 
-Windows 10/11 (64-bit recommended)
+- `furbexe.exe` — the compiled application  
+- `furby_sequences.json` — stores your saved motion sequences  
 
-Bluetooth LE support on your PC (built-in or via dongle)
+---
 
-A Furby Connect
+## 📜 Versioning
 
-How to Run:
+**Current version:** v1.0.0 (first public build)  
 
-Download furbexe.exe.
+| Version | Changes |
+|--------|---------|
+| v1.0.0 | Initial release with scanning, motor controls, presets, packet inspector |
 
-Double-click to launch.
+Future updates will follow:
 
-That’s it — the UI will appear.
+- **Patch / bugfixes** → `v1.0.1`, `v1.0.2`, …  
+- **New features** → `v1.1.0`, `v1.2.0`, …  
+- **Major redesign / overhaul** → `v2.0.0`, etc  
 
-🚀 Usage Guide
+---
 
-Open Furbexe.
+## ⚠️ Disclaimer
 
-Click Scan for Devices to find your Furby Connect.
-
-Select your Furby in the list and press Connect.
-
-Move motors using sliders, or try presets like Blink.
-
-Create and save sequences to make your Furby perform repeatable actions.
-
-Use the Packet Inspector to dig into Furby’s Bluetooth communication.
-
-📂 Files
-
-furbexe.exe → The app itself.
-
-furby_sequences.json → Automatically created to store your saved sequences.
-
-⚠️ Disclaimer
-
-This project is unofficial and not affiliated with Hasbro.
-Use at your own risk — directly controlling your Furby Connect via BLE may cause unexpected behavior.
+This project is **not associated with Hasbro**.  
+Use at your own risk — sending unintended commands to your Furby may cause unexpected behavior.
